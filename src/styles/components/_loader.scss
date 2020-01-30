@@ -1,0 +1,15 @@
+// *** Styles for the loading page *** //
+
+.loader {
+    align-items: center; // <-- vertical align
+    display: flex;
+    height: 100vh; // <-- 100% of viewport height
+    justify-content: center; // <-- horizontal align
+    width: 100vw; // <-- 100% of viewport width
+}
+
+// image element of .loader
+.loader__image {
+    height: 6rem;
+    width: 6rem;
+}

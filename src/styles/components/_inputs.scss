@@ -1,0 +1,18 @@
+// *** Styles for form inputs *** //
+
+.text-input {
+    border: 1px solid #cacccd;
+    font-size: $font-size-large;
+    font-weight: 300;
+    height: 50px;
+    padding: $s-size;
+}
+
+.select {
+    @extend .text-input; // <-- inherits the class styles
+}
+
+.text-area {
+    @extend .text-input; // <-- inherits the class styles
+    height: 10rem;
+}

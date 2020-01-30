@@ -1,0 +1,7 @@
+// *** Sets the dimensions for the application based on screen size *** //
+
+.content-container {
+    margin: 0 auto; // <-- evenly distributes space between left/right margins
+    padding: 0 $m-size;
+    max-width: 80rem;
+}

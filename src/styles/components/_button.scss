@@ -1,0 +1,23 @@
+// *** Login Button *** //
+
+.button {
+    background: $blue;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: $font-size-large;
+    font-weight: 300;
+    line-height: 1; // <-- for links masked as button -- keeps text on single line
+    padding: $s-size;
+    text-decoration: none; // <-- for links masked as buttons -- removes underline
+}
+
+// Button modifer to appear as link
+.button--link {
+    background: none;
+}
+
+// Button modify for secondary button color
+.button--secondary {
+    background: $grey;
+}

@@ -1,0 +1,81 @@
+// *** Styling for the list of expenses *** //
+
+// Style for the expense list 'table' titles
+.list-header {
+    background: $off-white;
+    border: 1px solid darken($off-white, 7%);
+    color: $light-grey;
+    display: flex;
+    justify-content: space-between; // <-- sends content to far left and far right
+    padding: $s-size $m-size;
+}
+
+// Style for the list of expenses
+.list-body {
+    margin-bottom: $m-size;
+
+    // display for desktops
+    @media (min-width: $desktop-breakpoint) {
+        margin-bottom: $l-size;
+    }
+}
+
+.list-item {
+    border: 1px solid darken($off-white, 7%);
+    border-top: none; // <-- removes border from top
+    color: $dark-grey;
+    display: flex;
+    flex-direction: column;
+    padding: $s-size;
+    text-decoration: none;
+    transition: background .3s ease; // <-- fades background from none to $off-white
+
+    // & === take everything from the parent selector, and toss it on here (shorthand for addition class .list-item:hover)
+    &:hover {
+        background: $off-white;
+    }
+
+    // display for desktops
+    @media (min-width: $desktop-breakpoint) {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: $m-size;
+    }
+}
+
+// list-item modifier for message when no expenses present
+.list-item--message {
+    align-items: center; // <-- vertical alignment
+    color: $grey;
+    justify-content: center; // <-- horizontal alignment
+    padding: $m-size;
+
+    // & == take everything from parent selector, and toss it on here (shorthand for addition class .list-item--message:hover)
+    &:hover {
+        background: none; // <-- removes background change on modified class
+    }
+}
+
+// Expense name element within .list-item
+.list-item__title {
+    margin: 0;
+    word-break: break-all; // <-- wraps very long text entires; use this for user-input fields! Else, the words will flow out of the element
+}
+
+// Date element for .list-item
+.list-item__sub-title {
+    color: $grey;
+    font-size: $font-size-small;
+}
+
+// Amount element for .list-item
+.list-item__data {
+    margin: $s-size 0 0 0;
+
+    // display for desktops
+    @media (min-width: $desktop-breakpoint) {
+        margin: 0;
+        padding-left: $s-size;
+    }
+}

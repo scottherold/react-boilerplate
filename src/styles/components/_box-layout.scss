@@ -1,0 +1,27 @@
+// *** LoginPage Component ***
+
+// Page Styles
+.box-layout {
+    align-items: center; // <-- vertical align
+    background: url('/images/bg.jpg'); // <-- path is from the public folder
+    background-size: cover; // <-- covers the entire layout
+    display: flex;
+    height: 100vh; // <-- 'vh' === viewport height; setting to 100 means the full viewport
+    justify-content: center; // <-- horizontal align
+    width: 100vw; // <-- 'vw' === viewport width; see above
+}
+
+// Login Box
+.box-layout__box {
+    background: fade-out(white, .15); // <-- opaqued white
+    border-radius: 3px;
+    padding: $l-size $m-size;
+    text-align: center;
+    width: 25rem;
+}
+
+// Login Box h1
+.box-layout__title {
+    margin: 0 0 $m-size 0;
+    line-height: 1; // <-- space above and below text
+}

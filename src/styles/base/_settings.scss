@@ -1,0 +1,20 @@
+// *** Universal css variables to be injected into styles/class *** //
+
+// *** COLORS *** //
+$blue:  #0099cc;
+$dark-blue: #364051;
+$dark-grey: #333; // <-- if all 6 hex values are the same, you only need to use three (in this case 333 == 333333)
+$grey: #888;
+$light-grey: #666;
+$off-white: #f7f7f7;
+
+// *** FONT SIZES ** //
+$font-size-small: 1.4rem;
+$font-size-large: 1.8rem;
+
+// *** SPACING *** //
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+$desktop-breakpoint: 45rem; // <-- for desktop width threshold

@@ -1,0 +1,50 @@
+// *** Universal app styles *** //
+
+// variables (start with $) created in _settings.scss
+* {
+    box-sizing: border-box; // <-- removes border/padding space for input boxes
+}
+
+html {
+    font-size: 62.5%; // <-- sets rem to a base 10 (1 rem = 16 pixels. 62.5% of 16 is 10 pixels)
+}
+
+body {
+    color: $dark-grey;
+    font-family: Helvetica, Arial, sasns-serif;
+    font-size: $m-size;
+    line-height: 1.6; // <-- space above and below text lines
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+// Clicked Link in the Header
+.is-active {
+    font-weight: bold;
+}
+
+// *** AUTOFILL OVERRIDES *** //
+
+/* 
+/ remove input autofill input color, set to default dark
+/ set default text color to off-white
+*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+    -webkit-text-fill-color:black;
+}
+input:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}

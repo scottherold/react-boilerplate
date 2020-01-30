@@ -1,0 +1,17 @@
+// *** These are styles for the Expense Form *** //
+.form {
+    display: flex;
+    flex-direction: column;
+
+    // selects all child of this class
+    > * {
+        margin-bottom: $m-size;
+    }
+}
+
+// form error form element
+.form__error {
+    margin: 0 0 $m-size 0;
+    color: red;
+    font-style: italic;
+}

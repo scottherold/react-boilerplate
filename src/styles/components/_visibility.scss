@@ -1,0 +1,13 @@
+// *** Determines if elements are visible based on screen size *** //
+.show-for-mobile {
+    @media (min-width: $desktop-breakpoint) {
+        display: none;
+    }
+}
+
+.show-for-desktop {
+    // Math to ensure we don't have both display options showing at the same time
+    @media (max-width: $desktop-breakpoint - 0.1rem) {
+        display: none;
+    }
+}
